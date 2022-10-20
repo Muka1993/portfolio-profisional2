@@ -504,17 +504,28 @@ img {
 
   .work h2{
     font-size: 24px;
-
   }
 
   .container {
-    margin: 0;
-    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+   
   }
 
   .card {
-    width: 550px;
-    height: 550px;
+    font-size: 15px;
+    width: 580px;
+    height: 580px;
+    margin-left: 60px;  
+  }
+
+  .card h2 {
+    font-size: 18px;
+  }
+
+  .card p {
+    text-align: center;
+    font-size: 15px;
   }
 }
 
@@ -526,11 +537,12 @@ img {
 
   .container {
     display: flex;
+    flex-wrap: wrap;
    
   }
 
   .card {
-    margin: 10px;
+    width: 550px;
   }
 }
 
@@ -607,10 +619,18 @@ img {
     margin-top: 90px;
   }
 
-  .card {
-    width:150%;
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+   
   }
 
+  .card {
+    width: 550px;
+    margin-left: 950px;
+  }
+
+  
   .servicesBx {
     margin: 0;
     padding: 0;  
