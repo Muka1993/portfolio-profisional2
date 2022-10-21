@@ -270,6 +270,12 @@ img {
   width: 550px;
   height: 550px;
   margin: 15px;
+  transition: all 1s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.2);
+  border: 1px solid #272829;
 }
 
 .card h2 {
