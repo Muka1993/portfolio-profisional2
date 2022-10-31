@@ -10,12 +10,28 @@
   scroll-behavior: smooth;
 }
 
+:root {
+  --image-background: url("/imagens/black-and-white-lights-abstract-curves.jpg");
+  --color-one: #111;
+  --color-two: #fff;
+  --color-three: #222;
+  --color-shadow: #0000001a;
+}
+
+.dark {
+  --image-background: url("/imagens/white-and-black-lights.jpg");
+  --color-one: #fff;
+  --color-two: #111;
+  --color-three: #222;
+  --color-shadow: #ffffffbd;
+}
+
 /* ÁREA DO BANNER */
 
 .banner {
   position: relative;
   min-height: 100vh;
-  background: url(https://images.pexels.com/photos/1954/black-and-white-lights-abstract-curves.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  background: var(--image-background);
   background-size: cover;
   background-position: right;
   display: flex;
@@ -26,7 +42,7 @@
 
 .banner h2 {
   font-size: 3em;
-  color: #fff;
+  color: var(--color-two);
   font-weight: 500;
   line-height: 1.5em;
 }
@@ -38,15 +54,29 @@
 
 .banner h3 {
   font-size: 1.5em;
-  color: #fff;
+  color: var(--color-two);
   font-weight: 500;
+}
+
+.botao {
+  width: 29px;
+  height: 22px;
+  border-radius: 9px;
+  background-color: var(--color-one);
+  border: 1px solid var(--color-two);
+
+  transition: all .5s ease-in-out;
+}
+
+.botao:hover {
+  box-shadow: 0 0 10px var(--color-two);
 }
 
 .btn-scroll {
   position: relative;
-  background: #fff;
+  background: var(--color-two);
   display: inline-block;
-  color: rgb(0, 0, 0);
+  color: var(--color-one);
   margin-top: 20px;
   padding: 10px 30px;
   font-size: 18px;
@@ -88,13 +118,13 @@ header {
 }
 
 header.sticky {
-  background: #fff;
+  background: var(--color-two);
   padding: 20px 100px;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px var(--color-shadow);
 }
 
-header .logo {
-  color: #fff;
+header .logo{
+  color: var(--color-two);
   font-size: 24px; 
   text-transform: uppercase;
   text-decoration: none;
@@ -103,7 +133,7 @@ header .logo {
 }
 
 header.sticky .logo {
-  color: #111;
+  color: var(--color-one);
 }
 
 header ul {
@@ -119,12 +149,16 @@ header ul li a {
   position: relative;
   display: inline-block;
   margin: 0 15px;
-  color: #fff;
+  color: var(--color-two);
   text-decoration: none;
 }
 
-header.sticky ul li a {
-  color: #111;  
+header.sticky ul li a  {
+  color: var(--color-one);  
+}
+
+.logo:hover {
+  color: #2196f3;
 }
 
 .heading.white {
@@ -135,7 +169,7 @@ header.sticky ul li a {
   width: 100%;
   text-align: center;
   margin-bottom: 30px;
-  color: #111; 
+  color: var(--color-one); 
 }
 
 .heading h2 {
@@ -149,6 +183,8 @@ header.sticky ul li a {
 .about {
   padding-top: 100px;
   margin-bottom: -90px;
+  background-color: var(--color-two);
+  color: var(--color-one);
 }
 
 .content {
@@ -172,10 +208,12 @@ header.sticky ul li a {
 
 .w50 img {
   margin-left: 220px;
+  
 }
 
 img {
   max-width: 100%;
+  
 }
 
 .hobbie {
@@ -185,12 +223,12 @@ img {
 /* SEÇÃO PROJETOS */
 
 .services {
-  background: #111;
+  background: var(--color-one);
   padding: 10px;
 }
 
 .heading.white {
-  color: white;
+  color: var(--color-two);
 }
 
 .services .content {
@@ -202,8 +240,9 @@ img {
 
 .services .content .servicesBx {
   padding: 40px 20px;
-  background: #222;
+  background: var(--color-three);
   color: #fff;
+  box-shadow: 0 0 5px var(--color-two);
   max-width: 340px;
   margin: 20px;
   text-align: center;
@@ -230,12 +269,14 @@ img {
 
 .work {
   padding: 100px 0 100px 0;
+  background-color: var(--color-two);
 }
 
 .work .content {
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap; 
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 
 .content h2 {
@@ -248,7 +289,7 @@ img {
 }
 
 .content button:hover {
-  color: #fff;
+  color: var(--color-two);
   background-color: #888;
 }
 
@@ -297,7 +338,7 @@ img {
 /* SEÇÃO DO CONTATO E FORMULÁRIO */
 
 .contact {
-  background-color: #111;
+  background-color: var(--color-one);
   display: flex;
   padding: 50px;
   
@@ -315,7 +356,7 @@ img {
 }
 
 .formBx form h3, .contactInfo {
-  color: #fff;
+  color: var(--color-two);
   font-size: 20px;
   font-weight: 500;
   margin-bottom: 10px;
@@ -328,8 +369,8 @@ img {
   background: transparent;
   border: none;
   outline: none;
-  background: #222;
-  color: #fff;
+  background: var(--color-three);
+  color: var(--color-two);
   resize: none;
 }
 
@@ -339,7 +380,7 @@ img {
 
 .formBx form input::placeholder, 
 .formBx form textarea::placeholder {
-  color: #999;
+  color: #8d8c8c;
 }
 
 .formBx form input[type="submit"] {
@@ -366,7 +407,7 @@ img {
 .contactInfoBx .box .icon {
   min-width: 40px;
   padding-top: 4px;
-  color: #fff;
+  color: var(--color-two);
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -377,7 +418,7 @@ img {
   display: flex;
   margin-left: 20px;
   font-size: 16px;
-  color: #fff;
+  color: var(--color-two);
   flex-direction: column;
   font-weight: 300;
 }
@@ -386,6 +427,10 @@ img {
   font-weight: 500;
   color: #2196f3;
   margin-bottom: 0;
+}
+
+input, textarea {
+  box-shadow: 0 0 3px var(--color-two);
 }
 
 /* RODAPÉ */
@@ -398,9 +443,57 @@ img {
   border-top: 1px solid rgb(59, 58, 58);
 }
 
+.copyright img {
+  width: 25px;
+  height: 25px;
+  transition: all 500ms ease-in-out;
+}
+
+.copyright img:hover {
+  transform: scale(1.2);
+}
+
 
 /* RESPONSIVIDADE */
 
+/* MEDIA 1500px */
+
+@media (max-width: 1500px) {
+  html {
+    overflow-x: hidden;
+  }
+
+  .work {
+    display: flex;
+    flex-wrap: wrap;
+    
+  }
+
+  .work .content .workBx {
+    width: 100%;
+    padding-left: 10px;
+  }
+
+  .work h2{
+    font-size: 24px;
+  }
+
+  .container {
+    display: flex;
+    
+  }
+
+  .card {
+    font-size: 15px;
+    width: 300px;
+    height: 300px;
+  }
+
+
+}
+
+
+/* MEDIA 991px */
 
 @media (max-width: 991px) {
   header, header.sticky {
@@ -448,7 +541,6 @@ img {
     width: 40px;
     height: 40px;
     background-color: #999;
-    
     background-position: center;
     background-repeat: no-repeat;
     background-size: 30px;
@@ -493,6 +585,7 @@ img {
 
   .content {
     flex-direction: column;
+    margin: 10px 0 89px 5px;
   }
 
   .w50 {
@@ -500,12 +593,22 @@ img {
   }
 
   .service .content .serviceBx {
+    align-items: center;
     margin: 10px; 
   }
 
+  .service {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .work {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
   .work .content .workBx {
-    width: 100%;
-    
+    width: 100%; 
   }
 
   .work h2{
@@ -515,14 +618,14 @@ img {
   .container {
     display: flex;
     flex-wrap: wrap;
-   
+    
   }
 
   .card {
+    align-items: center;
     font-size: 15px;
-    width: 580px;
-    height: 580px;
-    margin-left: 60px;  
+    width: 300px;
+    height: 300px;
   }
 
   .card h2 {
@@ -532,6 +635,27 @@ img {
   .card p {
     text-align: center;
     font-size: 15px;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .formBx {
+    min-width: 60%;
+    width: 690px;
+    margin: 0px 20px 50px 100px;
+  }
+}
+
+/* MEDIA 860px */
+
+@media (max-width: 860px){
+  .formBx {
+    min-width: 60%;
+    width: 650px;
+    margin: 0px 20px 50px 50px;
   }
 }
 
@@ -550,7 +674,32 @@ img {
   .card {
     width: 550px;
   }
+
+  .work {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: 10px;
+  } 
+
+  .card {
+    
+    width: 350px;
+    height: 350px;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+   
+  }
+
+  .formBx {
+    margin: -20px 0 0 50px;
+  }
 }
+
+/* MEDIA 600px */
 
 @media (max-width: 600px)  {
   html body {
@@ -572,7 +721,6 @@ img {
     width: 40px;
     height: 40px;
     background-color: #999;
-    
     background-position: center;
     background-repeat: no-repeat;
     background-size: 30px;
@@ -602,11 +750,80 @@ img {
     right: 200px;
   }
 
+  .content {
+    flex-direction: column;
+    margin: 10px 0 89px 80px;
+  }
+
+  .w50 {
+    margin-bottom: 20px;
+  }
+
+  .service .content .serviceBx {
+    align-items: center;
+    margin: 10px; 
+  }
+
+  .service {
+    display: flex;
+    flex-wrap: wrap;
+   
+  }
+
+  .work {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0 0 100px;
+  }
+
+  .work .content .workBx {
+    width: 100%; 
+  }
+
+  .work h2{
+    font-size: 24px;
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+   
+  }
+
+  .card {
+    align-items: center;
+    font-size: 15px;
+    width: 300px;
+    height: 300px;
+  }
+
+  .card h2 {
+    font-size: 18px;
+  }
+
+  .card p {
+    text-align: center;
+    font-size: 15px;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .formBx {
+    min-width: 60%;
+    width: 500px;
+    margin: -50px 20px 50px 0px;
+  }
+}
+
+/* MEDIA 500px */
+
   @media (max-width: 500px) {
 
     html body {
       overflow-x: hidden;
-      
       padding: 0;
       margin: 0;
     }
@@ -638,13 +855,54 @@ img {
       padding: 0;
     }
 
+    .about {
+      display: flex;
+      flex-direction: column;
+      margin: 10px 10px -110px 0px;
+      background-color: var(--color-two);
+      color: var(--color-one);
+    }
+    
+    .content {
+      justify-content: space-between;
+      text-align: justify;
+    }
+    
+    .contentBx {
+      margin-left: 50px;
+    }
+    .contentBx h3 {
+      font-size: 24px;
+      margin-bottom: 30px;
+    }
+    .w50 {
+      min-width: 50%;
+      padding-left: 0px;
+    }
+    
+    .w50 img {
+      margin-left: 270px;
+      
+    }
+    
+    img {
+      max-width: 100%;
+      
+    }
+    
+    .hobbie {
+      margin-top: 50px;
+    }
+
   .content {
-    margin: 10px 10px 0 10px;
+    width: 455px;
+    margin: 10px 1px 0px 1px;
     padding: 0;
   }
 
   .services {
     margin-top: 90px;
+    
   }
 
   .container {
@@ -654,25 +912,34 @@ img {
   }
 
   .card {
-    width: 550px;
+    width: 250px;
+    align-items: center;
     
   }
 
-  
   .servicesBx {
     margin: 0;
-    padding: 0;  
+    padding: 0; 
+
     }
 
   .work {
-    padding-left: 12px;
-    margin: 0px;     
+    margin: 0 ;
+    padding-left: 40px;
+      
     }     
 
-    .formBx {
-      display: flex;
-      flex-direction:column;
+  .contact {
+    display: flex;
+    flex-direction: column;
     }
+  
+  .formBx {
+    min-width: 60%;
+    width: 380px;
+    margin: 0px 20px 50px 10px;
+    }
+  
 
   .copyright p {
     font-size: 14px;
@@ -680,6 +947,8 @@ img {
 
   }
   
+/* MEDIA 700px */
+
   @media (max-width: 700px) {
     html body {
       padding: 0;
@@ -691,11 +960,33 @@ img {
        display: flex;
        flex-wrap: wrap;
        flex-direction: row; 
+       width: 100%;
      }
   
     .card {
      width: 350px;
      height: 150px;
     }
+
+    .servicesBx {
+      margin: 0;
+      padding: 0; 
+  
+      }
+  
+    .work {
+      margin: 0 ;
+      } 
+       
+  
+    .contact {
+      display: flex;
+      flex-direction: column;
+      }
+    
+    .formBx {
+      min-width: 100%;
+      width: 400px;
+      margin: 0px 20px 50px 10px;
+      }
   }
-}

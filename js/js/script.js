@@ -13,6 +13,14 @@ window.addEventListener('scroll', function(){
     var menu = document.querySelector('.menu');
     menuToggle.classList.toggle('active');
     menu.classList.toggle('active');
-
-    
   }
+
+// DARK MODE
+
+var boton = document.getElementById('buttone');
+var documento = document.querySelector('body');
+boton.addEventListener('click', () => {
+  boton.classList.toggle('active');
+  documento.classList.toggle('dark');
+});
+
