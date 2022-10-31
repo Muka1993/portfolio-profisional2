@@ -11,7 +11,7 @@
 }
 
 :root {
-  --image-background: url("/imagens/black-and-white-lights-abstract-curves.jpg");
+  --image-background: url("https://raw.githubusercontent.com/Muka1993/portfolio-profisional2/main/imagens/black-and-white-lights-abstract-curves.jpg");
   --color-one: #111;
   --color-two: #fff;
   --color-three: #222;
@@ -19,7 +19,7 @@
 }
 
 .dark {
-  --image-background: url("/imagens/white-and-black-lights.jpg");
+  --image-background: url("https://raw.githubusercontent.com/Muka1993/portfolio-profisional2/main/imagens/white-and-black-lights.jpg");
   --color-one: #fff;
   --color-two: #111;
   --color-three: #222;
