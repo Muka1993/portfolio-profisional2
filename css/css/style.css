@@ -508,7 +508,7 @@ input, textarea {
     display: block;
     padding: 100px 50px;
     text-align: center;
-    width: 100%;
+    width: 50%;
     height: 100vh;
     background: #fff;
     transition: 0.5s;
@@ -529,8 +529,8 @@ input, textarea {
   .toggle {
     width: 40px;
     height: 40px;
-    background: url(/imagens/list.svg);
-    background-color: rgb(255, 255, 255);
+    background: url(/imagens/lista-black.png);
+    background-color: #fff;
     background-position: center;
     background-repeat: no-repeat;
     background-size: 30px;
@@ -540,7 +540,7 @@ input, textarea {
   .toggle.active {
     width: 40px;
     height: 40px;
-    background-color: #999;
+    background-color: #d6d6d6;
     background-position: center;
     background-repeat: no-repeat;
     background-size: 30px;
@@ -556,7 +556,7 @@ input, textarea {
   }
 
   .banner h2 {
-    font-size: 1.5em;
+    font-size: 1.9em;
   }
 
   .banner h3 {
@@ -709,7 +709,7 @@ input, textarea {
   .toggle {
     width: 40px;
     height: 40px;
-    background: url(/imagens/list.svg);
+    background: url(/imagens/lista-black.png);
     background-color: rgb(255, 255, 255);
     background-position: center;
     background-repeat: no-repeat;
@@ -720,7 +720,7 @@ input, textarea {
   .toggle.active {
     width: 40px;
     height: 40px;
-    background-color: #999;
+    background-color: #d8d8d8;
     background-position: center;
     background-repeat: no-repeat;
     background-size: 30px;
@@ -820,7 +820,7 @@ input, textarea {
 
 /* MEDIA 500px */
 
-  @media (max-width: 500px) {
+  @media (max-width: 520px) {
 
     html body {
       overflow-x: hidden;
@@ -831,19 +831,23 @@ input, textarea {
     .toggle {
       width: 40px;
       height: 40px;
-      background: url(/imagens/list.svg);
+      background: url(/imagens/lista-black.png);
       background-color: rgb(255, 255, 255);
       background-position: center;
       background-repeat: no-repeat;
       background-size: 30px;
       cursor: pointer;
     }
+
+    .toggle:hover {
+      transform: scale(1.1);
+    }
   
     .toggle.active {
       width: 40px;
       height: 40px;
       background-color: #999;
-      background: url(/imagens/list.svg);
+      background: url(/imagens/lista-black.png);
       background-position: center;
       background-repeat: no-repeat;
       background-size: 30px;
@@ -858,7 +862,7 @@ input, textarea {
     .about {
       display: flex;
       flex-direction: column;
-      margin: 10px 10px -110px 0px;
+      margin: 10px 0px -110px 19px;
       background-color: var(--color-two);
       color: var(--color-one);
     }
@@ -869,7 +873,7 @@ input, textarea {
     }
     
     .contentBx {
-      margin-left: 50px;
+      margin-left: 55px;
     }
     .contentBx h3 {
       font-size: 24px;
@@ -925,7 +929,7 @@ input, textarea {
 
   .work {
     margin: 0 ;
-    padding-left: 40px;
+    padding-left: 55px;
       
     }     
 
