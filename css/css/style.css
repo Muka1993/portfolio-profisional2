@@ -820,7 +820,7 @@ input, textarea {
 
 /* MEDIA 500px */
 
-  @media (max-width: 520px) {
+  @media (max-width: 500px) {
 
     html body {
       overflow-x: hidden;
@@ -918,6 +918,7 @@ input, textarea {
   .card {
     width: 250px;
     align-items: center;
+    margin-right: 110px;
     
   }
 
@@ -965,11 +966,14 @@ input, textarea {
        flex-wrap: wrap;
        flex-direction: row; 
        width: 100%;
+       
+
      }
   
     .card {
-     width: 350px;
-     height: 150px;
+     width: 650px;
+     height: 50px;
+     margin-left: 110px;
     }
 
     .servicesBx {
@@ -979,7 +983,9 @@ input, textarea {
       }
   
     .work {
-      margin: 0 ;
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0;
       } 
        
   
@@ -994,3 +1000,46 @@ input, textarea {
       margin: 0px 20px 50px 10px;
       }
   }
+
+  @media (max-width: 817px) {
+    html body {
+      padding: 0;
+      margin: 0;
+      overflow-x: hidden;
+    }
+
+    .container {
+       display: flex;
+       flex-wrap: wrap;
+       flex-direction: row; 
+       width: 100%;
+     }
+  
+    .card {
+     width: 310px;
+     height: 150px;
+    }
+
+    .servicesBx {
+      margin: 0;
+      padding: 0; 
+  
+      }
+  
+    .work {
+      margin: 0;
+      } 
+       
+  
+    .contact {
+      display: flex;
+      flex-direction: column;
+      }
+    
+    .formBx {
+      min-width: 100%;
+      width: 400px;
+      margin: 0px 20px 50px 10px;
+      }
+  }
+
