@@ -862,7 +862,6 @@ input, textarea {
     .about {
       display: flex;
       flex-direction: column;
-      margin: 10px 0px -110px 19px;
       background-color: var(--color-two);
       color: var(--color-one);
     }
@@ -883,12 +882,11 @@ input, textarea {
       min-width: 50%;
       padding-left: 0px;
     }
-    
+
     .w50 img {
-      margin-left: 270px;
-      
+      padding-left: 60px;
     }
-    
+      
     img {
       max-width: 100%;
       
@@ -917,7 +915,6 @@ input, textarea {
 
   .card {
     width: 250px;
-    align-items: center;
     margin-right: 110px;
     
   }
@@ -930,8 +927,7 @@ input, textarea {
 
   .work {
     margin: 0 ;
-    padding-left: 55px;
-      
+ 
     }     
 
   .contact {
@@ -941,15 +937,13 @@ input, textarea {
   
   .formBx {
     min-width: 60%;
-    width: 380px;
-    margin: 0px 20px 50px 10px;
+    width: 480px;
+   
     }
   
-
   .copyright p {
     font-size: 14px;
   }
-
   }
   
 /* MEDIA 700px */
@@ -967,7 +961,6 @@ input, textarea {
        flex-direction: row; 
        width: 100%;
        
-
      }
   
     .card {
