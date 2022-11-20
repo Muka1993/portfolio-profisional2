@@ -24,3 +24,16 @@ boton.addEventListener('click', () => {
   documento.classList.toggle('dark');
 });
 
+// ANIMAÇÃO DO BOTÃO ENVIAR
+
+let btnE = document.querySelector('.text-bg-danger');
+btnE.addEventListener('click', function(){
+  btnE.innerHTML = 'Enviado';
+});
+
+btnE.addEventListener('mouseleave', function(){
+  btnE.innerHTML = 'Enviar';
+});
+
+
+
