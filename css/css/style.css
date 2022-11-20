@@ -433,6 +433,13 @@ input, textarea {
   box-shadow: 0 0 3px var(--color-two);
 }
 
+.but-sub {
+  background-color: #2196f3;
+  color: #d6d6d6;
+  text-shadow: 0 0 3px black;
+  
+}
+
 /* RODAPÉ */
 
 .copyright {

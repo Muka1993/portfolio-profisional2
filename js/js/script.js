@@ -26,7 +26,7 @@ boton.addEventListener('click', () => {
 
 // ANIMAÇÃO DO BOTÃO ENVIAR
 
-let btnE = document.querySelector('.text-bg-danger');
+let btnE = document.querySelector('.but-sub');
 btnE.addEventListener('click', function(){
   btnE.innerHTML = 'Enviado';
 });
