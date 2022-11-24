@@ -35,5 +35,10 @@ btnE.addEventListener('mouseleave', function(){
   btnE.innerHTML = 'Enviar';
 });
 
+let butE = document.querySelector('form');
+butE.addEventListener('submit', function(evento) {
+  evento.preventDefault();
+})
+
 
 
