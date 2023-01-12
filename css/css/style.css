@@ -2,6 +2,16 @@
 
 /* ÁREA DO BANNER */
 
+
+/* typical Device Breakpoints
+------------------------------
+Pequenas telas: até 600px
+Celular: de 600px até 768
+Tablet: 768px até 992px
+Desktop: 992px até 1200px
+Grandes telas: acima de 1200px
+*/
+
 * {
   margin: 0;
   padding: 0;
@@ -31,9 +41,10 @@
 .banner {
   position: relative;
   min-height: 100vh;
+  width: 100vw;
   background: var(--image-background);
   background-size: cover;
-  background-position: right;
+  background-position: center left;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -56,6 +67,34 @@
   font-size: 1.5em;
   color: var(--color-two);
   font-weight: 500;
+}
+
+.toggle {
+  position: relative;
+  left: 50px;
+  width: 40px;
+  height: 40px;
+  background: url(/imagens/lista-black.png);
+  background-color: rgb(255, 255, 255);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 30px;
+  cursor: pointer;
+}
+
+.toggle:hover {
+  transform: scale(1.1);
+}
+
+.toggle.active {
+  width: 40px;
+  height: 40px;
+  background-color: #999;
+  background: url(/imagens/lista-white.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 30px;
+  cursor: pointer;
 }
 
 .botao {
@@ -134,6 +173,16 @@ header .logo{
 
 header.sticky .logo {
   color: var(--color-one);
+}
+
+.menu {
+  position: absolute;
+  margin-top: 80px;
+  padding: 0;
+  width: 100%;
+  height: 10vh;
+  background-color: #2196f3;
+
 }
 
 header ul {
@@ -460,584 +509,4 @@ input, textarea {
   transform: scale(1.2);
 }
 
-
-/* RESPONSIVIDADE */
-
-/* MEDIA 1500px */
-
-@media (max-width: 1500px) {
-  html {
-    overflow-x: hidden;
-  }
-
-  .work {
-    display: flex;
-    flex-wrap: wrap;
-    
-  }
-
-  .work .content .workBx {
-    width: 100%;
-    padding-left: 10px;
-  }
-
-  .work h2{
-    font-size: 24px;
-  }
-
-  .container {
-    display: flex;
-    
-  }
-
-  .card {
-    font-size: 15px;
-    width: 300px;
-    height: 300px;
-  }
-}
-
-
-/* MEDIA 991px */
-
-@media (max-width: 991px) {
-  header, header.sticky {
-    padding: 20px 50px;
-    z-index: 1000;
-  }
-
-  .menu {
-    position: fixed;
-    top: 75px;
-    left: -100%;
-    display: block;
-    padding: 100px 50px;
-    text-align: center;
-    width: 50%;
-    height: 100vh;
-    background: #fff;
-    transition: 0.5s;
-    z-index: 999;    
-    border-top: 1px solid rgba(0,0,0,0.2)
-  }
-
-    .menu.active {
-    left: 0;
-  }
-
-  header ul li a {
-    color: #111;
-    font-size: 24px;
-    margin: 10px;
-  }
-
-  .toggle {
-    width: 40px;
-    height: 40px;
-    background: url(/imagens/lista-black.png);
-    background-color: #fff;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 30px;
-    cursor: pointer;
-  }
-
-  .toggle.active {
-    width: 40px;
-    height: 40px;
-    background-color: #d6d6d6;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 30px;
-    cursor: pointer;
-  }
-
-  section {
-    padding: 10px 50px;
-  }
-
-  .banner {
-    padding: 150px 50px 100px;
-  }
-
-  .banner h2 {
-    font-size: 1.9em;
-  }
-
-  .banner h3 {
-    font-size: 1em;
-  }
-
-  .about {
-    padding-bottom: 0px;
-    margin-bottom: -110px;
-  
-  } 
-
-  .btn {
-    margin-top: 10px;
-    padding: 10px 20px;
-    font-size: 16px;
-  }
-
-  .heading h2 {
-    font-size: 24px;
-  }
-
-  .contentBx h3 {
-    font-size: 20px;
-  }
-
-  .content {
-    flex-direction: column;
-    margin: 10px 0 89px 5px;
-  }
-
-  .w50 {
-    margin-bottom: 20px;
-  }
-
-  .service .content .serviceBx {
-    align-items: center;
-    margin: 10px; 
-  }
-
-  .service {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .work {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .work .content .workBx {
-    width: 100%; 
-  }
-
-  .work h2{
-    font-size: 24px;
-  }
-
-  .container {
-    display: flex;
-    flex-wrap: wrap;
-    
-  }
-
-  .card {
-    align-items: center;
-    font-size: 15px;
-    width: 300px;
-    height: 300px;
-  }
-
-  .card h2 {
-    font-size: 18px;
-  }
-
-  .card p {
-    text-align: center;
-    font-size: 15px;
-  }
-
-  .contact {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .formBx {
-    min-width: 60%;
-    width: 690px;
-    margin: 0px 20px 50px 100px;
-  }
-}
-
-/* MEDIA 860px */
-
-@media (max-width: 860px){
-  .formBx {
-    min-width: 60%;
-    width: 650px;
-    margin: 0px 20px 50px 50px;
-  }
-}
-
-@media (max-width: 700px){
-  html body {
-    overflow-x: hidden;
-    
-  }
-
-  .container {
-    display: flex;
-    flex-wrap: wrap;
-   
-  }
-
-  .card {
-    width: 550px;
-  }
-
-  .work {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    margin-left: 10px;
-  } 
-
-  .card {
-    
-    width: 350px;
-    height: 350px;
-  }
-
-  .contact {
-    display: flex;
-    flex-direction: column;
-   
-  }
-
-  .formBx {
-    margin: -20px 0 0 50px;
-  }
-}
-
-/* MEDIA 600px */
-
-@media (max-width: 600px)  {
-  html body {
-    overflow-x: hidden;
-  }
-
-  .toggle {
-    width: 40px;
-    height: 40px;
-    background: url(/imagens/lista-black.png);
-    background-color: rgb(255, 255, 255);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 30px;
-    cursor: pointer;
-  }
-
-  .toggle.active {
-    width: 40px;
-    height: 40px;
-    background-color: #d8d8d8;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 30px;
-    cursor: pointer;
-  }
-
-  header, header.sticky {
-    padding: 30px 30px;
-  }
-
-  .banner {
-    padding: 10px 20px 100px;
-  }
-
-  .about {
-    padding-bottom: 0px;
-    margin-bottom: -110px;
-  } 
-
-  .content {
-    width: 400px;
-    text-align: justify;
-  }
-
-  .w50 img {
-    position: relative;
-    right: 200px;
-  }
-
-  .content {
-    flex-direction: column;
-    margin: 10px 0 89px 80px;
-  }
-
-  .w50 {
-    margin-bottom: 20px;
-  }
-
-  .service .content .serviceBx {
-    align-items: center;
-    margin: 10px; 
-  }
-
-  .service {
-    display: flex;
-    flex-wrap: wrap;
-   
-  }
-
-  .work {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 0 0 100px;
-  }
-
-  .work .content .workBx {
-    width: 100%; 
-  }
-
-  .work h2{
-    font-size: 24px;
-  }
-
-  .container {
-    display: flex;
-    flex-wrap: wrap;
-   
-  }
-
-  .card {
-    align-items: center;
-    font-size: 15px;
-    width: 300px;
-    height: 300px;
-  }
-
-  .card h2 {
-    font-size: 18px;
-  }
-
-  .card p {
-    text-align: center;
-    font-size: 15px;
-  }
-
-  .contact {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .formBx {
-    min-width: 60%;
-    width: 500px;
-    margin: -50px 20px 50px 0px;
-  }
-}
-
-/* MEDIA 500px */
-
-  @media (max-width: 500px) {
-
-    html body {
-      overflow-x: hidden;
-      padding: 0;
-      margin: 0;
-    }
-
-    .toggle {
-      width: 40px;
-      height: 40px;
-      background: url(/imagens/lista-black.png);
-      background-color: rgb(255, 255, 255);
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: 30px;
-      cursor: pointer;
-    }
-
-    .toggle:hover {
-      transform: scale(1.1);
-    }
-  
-    .toggle.active {
-      width: 40px;
-      height: 40px;
-      background-color: #999;
-      background: url(/imagens/lista-black.png);
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: 30px;
-      cursor: pointer;
-    }
-
-    section {
-      margin: 0;
-      padding: 0;
-    }
-
-    .about {
-      display: flex;
-      flex-direction: column;
-      background-color: var(--color-two);
-      color: var(--color-one);
-    }
-    
-    .content {
-      justify-content: space-between;
-      text-align: justify;
-    }
-    
-    .contentBx {
-      margin-left: 55px;
-    }
-    .contentBx h3 {
-      font-size: 24px;
-      margin-bottom: 30px;
-    }
-    .w50 {
-      min-width: 50%;
-      padding-left: 0px;
-    }
-
-    .w50 img {
-      padding-left: 60px;
-    }
-      
-    img {
-      max-width: 100%;
-      
-    }
-    
-    .hobbie {
-      margin-top: 50px;
-    }
-
-  .content {
-    width: 455px;
-    margin: 10px 1px 0px 1px;
-    padding: 0;
-  }
-
-  .services {
-    margin-top: 90px;
-    
-  }
-
-  .container {
-    display: flex;
-    flex-wrap: wrap;
-   
-  }
-
-  .card {
-    width: 250px;
-    margin-right: 110px;
-    
-  }
-
-  .servicesBx {
-    margin: 0;
-    padding: 0; 
-
-    }
-
-  .work {
-    margin: 0 ;
- 
-    }     
-
-  .contact {
-    display: flex;
-    flex-direction: column;
-    }
-  
-  .formBx {
-    min-width: 60%;
-    width: 480px;
-   
-    }
-  
-  .copyright p {
-    font-size: 14px;
-  }
-  }
-  
-/* MEDIA 700px */
-
-  @media (max-width: 720px) {
-    html body {
-      padding: 0;
-      margin: 0;
-      overflow-x: hidden;
-    }
-
-    .container {
-       display: flex;
-       flex-wrap: wrap;
-       flex-direction: row; 
-       width: 100%;
-       
-     }
-  
-    .card {
-     width: 650px;
-     height: 50px;
-     margin-left: 110px;
-    }
-
-    .servicesBx {
-      margin: 0;
-      padding: 0; 
-  
-      }
-  
-    .work {
-      display: flex;
-      flex-wrap: wrap;
-      margin: 0;
-      } 
-       
-  
-    .contact {
-      display: flex;
-      flex-direction: column;
-      }
-    
-    .formBx {
-      min-width: 100%;
-      width: 400px;
-      margin: 0px 20px 50px 10px;
-      }
-  }
-
-  @media (max-width: 817px) {
-    html body {
-      padding: 0;
-      margin: 0;
-      overflow-x: hidden;
-    }
-
-    .container {
-       display: flex;
-       flex-wrap: wrap;
-       flex-direction: row; 
-       width: 100%;
-     }
-  
-    .card {
-     width: 310px;
-     height: 150px;
-    }
-
-    .servicesBx {
-      margin: 0;
-      padding: 0; 
-  
-      }
-  
-    .work {
-      margin: 0;
-      } 
-       
-  
-    .contact {
-      display: flex;
-      flex-direction: column;
-      }
-    
-    .formBx {
-      min-width: 100%;
-      width: 400px;
-      margin: 0px 20px 50px 10px;
-      }
-  }
 
