@@ -341,7 +341,7 @@ Grandes telas: acima de 1200px
     .container {
       display: flex;
       flex-wrap: wrap;
-     
+  
     }
   
     .card {

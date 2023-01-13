@@ -41,4 +41,12 @@ butE.addEventListener('submit', function(evento) {
 })
 
 
+let menu = document.querySelector('.menu');
 
+function clickMenu() {
+  if(menu.style.display == 'none'){
+  menu.style.display = 'block';
+} else {
+  menu.style.display = 'none';
+}
+}
