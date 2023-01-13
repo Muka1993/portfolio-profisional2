@@ -330,15 +330,16 @@ img {
 
 .work {
   margin-top: 100px;
-  width: 90vw;
+  width: 100vw;
   background-color: var(--color-two);
 }
 
 .work .content {
+  margin-top: 100;
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
   flex-direction: column;
+  
 }
 
 .content h2 {
@@ -357,7 +358,8 @@ img {
 
 .work .content .workBx {
   width: 100vw;
-  padding: 100px;
+
+  
 }
 
 .work .content .workBx img {
