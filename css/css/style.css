@@ -66,7 +66,6 @@ body {
   padding: 0px;
 }
 
-
 .banner h3 {
   font-size: 1.5em;
   color: var(--color-two);
@@ -185,10 +184,7 @@ header.sticky .logo {
   width: 100vw;
   height: 30vh;
   background-color: #778c9c;
-  
-  
 }
-
 
 header ul {
   position: relative;
@@ -279,6 +275,7 @@ img {
 
 .hobbie {
   margin-top: 50px;
+  width: 90vw;
 }
 
 /* SEÇÃO PROJETOS */
@@ -404,6 +401,12 @@ img {
   background-color: var(--color-one);
   display: flex;
   padding-top: 10px;
+  
+}
+
+.heading.white h2 {
+  transform: rotate(90deg);
+ 
   
 }
 
