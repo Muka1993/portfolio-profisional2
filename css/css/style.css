@@ -356,7 +356,7 @@ img {
   background: var(--color-three);
   color: #fff;
   box-shadow: 0 0 5px var(--color-two);
-  width: 500px;
+  width: 400px;
   margin: 20px;
   text-align: center;
   transition: 0.5s;
@@ -368,7 +368,7 @@ img {
 }
 
 .work .cont .box img {
-  max-width: 400px;
+  max-width: 300px;
   filter: infert(1);
 }
 
