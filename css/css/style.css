@@ -86,6 +86,7 @@ body {
 
 .material-symbols-outlined {
   color: var(--color-two);
+  cursor: pointer;
   font-variation-settings:
   'FILL' 0,
   'wght' 600,
