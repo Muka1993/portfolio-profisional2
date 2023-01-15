@@ -146,17 +146,18 @@ header {
   top: 0;
   left: 0;
   width: 100vw;
-  padding: 40px 60px;
+  padding: 40px 90px;
+  margin: auto;
   z-index: 1000;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   transition: 0.5s;
 }
 
 header.sticky {
   background: var(--color-two);
-  padding: 20px 50px;
+  padding: 20px 90px;
   box-shadow: 0 0 20px var(--color-shadow);
 }
 
@@ -185,10 +186,11 @@ header.sticky .logo {
   right: 0px;
   top: 76px;
   padding: 0;
-  width: 100vw;
+  width: 40vw;
   height: 10vh;
-  height: 30vh;
+  height: 25vh;
   background-color: #778c9c;
+  
 }
 
 header ul {
