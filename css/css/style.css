@@ -222,7 +222,12 @@ header.sticky ul li a  {
   color: var(--color-one);  
 }
 
-.menu header.sticky ul li a
+
+header .logo {
+  position: relative;
+  right: 70px;
+  
+}
 
 .logo:hover {
   color: #2196f3;
@@ -252,6 +257,7 @@ header.sticky ul li a  {
   padding-top: 100px;
   background-color: var(--color-two);
   color: var(--color-one);
+  
 }
 
 .content {
@@ -494,8 +500,7 @@ input, textarea {
 .but-sub {
   background-color: #2196f3;
   color: #d6d6d6;
-  text-shadow: 0 0 3px black;
-  
+  text-shadow: 0 0 3px black;  
 }
 
 /* RODAPÉ */
