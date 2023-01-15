@@ -180,13 +180,15 @@ header.sticky .logo {
 }
 
 .menu {
+  display: flex;
+  flex-direction: column;
   display: none;
   position: absolute;
   text-align: center;
   right: 0px;
   top: 76px;
   padding: 0;
-  width: 40vw;
+  width: 29vw;
   height: 10vh;
   height: 25vh;
   background-color: #778c9c;
@@ -208,7 +210,7 @@ header ul li {
 header ul li a {
   display: flex;
   flex-direction: column;
-  font-size: 0.5em;
+  font-size: 1em;
   position: relative;
   padding:  5px;
   color: var(--color-two);
