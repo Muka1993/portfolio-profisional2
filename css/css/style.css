@@ -190,10 +190,12 @@ header.sticky .logo {
   padding: 0;
   width: 29vw;
   height: 10vh;
-  height: 25vh;
-  background-color: #778c9c;
-  
+  height: 30vh;
+  background-color: #121315;
+  box-shadow: 0 0 10px #121315;
 }
+
+
 
 header ul {
   position: relative;
@@ -213,13 +215,13 @@ header ul li a {
   font-size: 1em;
   position: relative;
   padding:  5px;
-  color: var(--color-two);
+  color: white;
   text-decoration: none; 
 
 }
 
 header.sticky ul li a  {
-  color: var(--color-one);  
+  color: white;  
 }
 
 
@@ -396,22 +398,26 @@ img {
 .contact {
   background-color: var(--color-one);
   display: flex;
-  padding-top: 50px;
+  margin-top: 10px;
   
 }
 
 .contact .cont h2 {
   position: relative;
+  font-size: 2em;
   top: 250px;
   color: var(--color-two);
   transform: rotate(90deg) ;
 
 }
+.cont {
+  margin: 0;
+}
 
 .formBx {
   min-width: 60%;
   width: 500px;
-  margin: 100px 200px 50px 0;  
+  margin: 100px 100px 50px 0;  
 }
 
 .formBx form {
@@ -421,7 +427,7 @@ img {
 
 .formBx form h3, .contactInfo {
   color: var(--color-two);
-  font-size: 20px;
+  font-size: 1.2em;
   font-weight: 500;
   margin-bottom: 10px;
 }
