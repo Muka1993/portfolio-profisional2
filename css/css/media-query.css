@@ -12,10 +12,60 @@ Grandes telas: acima de 1200px
 
 /* RESPONSIVIDADE */
 
-/* MEDIA 1500px */
+/* Tablet tab3 Samsung  MEDIA 600px */
 
-@media screen and (min-width: 600px) and (max-width: 768px) {
+@media screen and (min-width: 600px) and (max-width: 700px) {
+   /* SEÇÃO SOBRE MIM */
+
+.about {
+    width: 80vw;
+    padding-top: 100px;
+    background-color: var(--color-two);
+    color: var(--color-one); 
+    
+  }
+  
+  .content {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+    text-align: justify;
+  }
+  
+  .contentBx {
+    padding-right: 30px;
    
+  }
   
+  .contentBx p {
+    font-size: 1em;
+    padding-left: 10px;
+  }
+  
+  .contentBx h3 {
+    font-size: 24px;
+    margin-bottom: 30px;
+    padding-left: 10px;
+  }
+  
+  .w50 {
+    min-width: 50%;
+    padding-left: 0px;
+  }
+  
+  .w50 img {
+   margin-top: 40vw; 
+  }
+  
+  img {
+    max-width: 100%;
+    
+  }
+  
+  .hobbie {
+    margin-top: 45px;
+    width: 265px;
+  
+  }
+
 }
-  
