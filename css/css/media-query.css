@@ -14,7 +14,7 @@ Grandes telas: acima de 1200px
 
 /* Tablet tab3 Samsung  MEDIA 600px */
 
-@media screen and (min-width: 600px) and (max-width: 700px) {
+@media screen and (min-width: 600px) and (max-width: 768px) {
 
    /* SEÇÃO SOBRE MIM */
 
@@ -35,7 +35,6 @@ Grandes telas: acima de 1200px
   
   .contentBx {
     padding-right: 30px;
-   
   }
   
   .contentBx p {

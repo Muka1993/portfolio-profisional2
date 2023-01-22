@@ -1,5 +1,10 @@
 @charset "UTF-8";
 
+/* Media para Telas Grandes */
+
+@media screen and (min-width: 992px) and (max-width: 2600px) {
+  
+
 /* ÁREA DO BANNER */
 
 
@@ -61,7 +66,7 @@ body {
 
 .banner h2 {
   display: block;
-  font-size: 2.8em;
+  font-size: 5.8em;
   color: var(--color-two);
   font-weight: 500;
   line-height: 1.9em;
@@ -69,12 +74,13 @@ body {
 }
 
 .banner h3 {
-  font-size: 1.2em;
+  font-size: 2.2em;
   color: var(--color-two);
   font-weight: 500;
 }
 
 .toggle {
+  display: none;
   position: relative;
   left: 50px;
   
@@ -146,11 +152,10 @@ header {
   top: 0;
   left: 0;
   width: 100vw;
-  padding: 50px 90px;
+  padding: 40px 120px;
   margin: auto;
   z-index: 1000;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   transition: 0.5s;
 }
@@ -181,46 +186,49 @@ header.sticky .logo {
 
 .menu {
   display: flex;
-  flex-direction: column;
-  display: none;
-  position: absolute;
-  text-align: center;
-  right: 0px;
-  top: 76px;
+  display: block;
+  position: relative;
+  text-align: center; 
+  top: -10px;
   padding: 0;
   width: 29vw;
-  height: 10vh;
-  height: 30vh;
+  height: 0vh;
   background-color: #121315;
   box-shadow: 0 0 10px #121315;
+
 }
 
 
 header ul {
   position: relative;
+  margin-right: 150px;
   display: flex;
-  flex-direction: column;
+  
+ 
   
 }
 header ul li {
+  display: inline-block;
   position: relative;
   list-style: none;
-  padding-top: 20px;
+  padding: 0px 0px;
+  
+  
 }
 
 header ul li a {
   display: flex;
-  flex-direction: column;
-  font-size: 1em;
+  font-size: 1.2em;
   position: relative;
-  padding:  5px;
+  margin-left: 20px;
   color: white;
   text-decoration: none; 
+  
 
 }
 
 header.sticky ul li a  {
-  color: white;  
+  color: rgb(0, 0, 0);  
 }
 
 
@@ -247,14 +255,14 @@ header .logo {
 
 .heading h2 {
   font-weight: 600;
-  font-size: 30px;
+  font-size: 3em;
 }
 
 /* SEÇÃO SOBRE MIM */
 
 .about {
   width: 100vw;
-  padding-top: 100px;
+  padding-top: 150px;
   background-color: var(--color-two);
   color: var(--color-one); 
 }
@@ -271,12 +279,12 @@ header .logo {
 }
 
 .contentBx p {
-  font-size: 1em;
+  font-size: 1.2em;
   padding-left: 10px;
 }
 
 .contentBx h3 {
-  font-size: 24px;
+  font-size: 2.5em;
   margin-bottom: 30px;
   padding-left: 10px;
 }
@@ -297,14 +305,14 @@ img {
 
 .hobbie {
   margin-top: 50px;
-  width: 90vw;
+  width: 48vw;
 }
 
 /* SEÇÃO PROJETOS */
 
 .services {
   background: var(--color-one);
-  padding: auto;
+  padding: 100px 0px 200px;
 
 }
 
@@ -314,12 +322,23 @@ img {
   padding-top: 100px;
 }
 
+.proj h2 {
+  font-size: 3em;
+  font-weight: 600;
+}
+
+.proj p {
+    font-size: 1.5em;
+    padding: 20px;
+}
+
 .services .content {
   display: flex;
   justify-content: center;
-  margin: auto;
+  margin: 100px;
   flex-wrap: wrap;
   flex-direction: row;
+  
 }
 
 .services .content .servicesBx {
@@ -344,7 +363,7 @@ img {
 }
 
 .services .content .servicesBx h2 {
-  font-size: 20px;
+  font-size: 1.8em;
   font-weight: 600;
 }
 
@@ -353,9 +372,17 @@ img {
 
 .work {
   background: var(--color-two);
-  padding-top: 100px;
+  padding: 100px 0px 200px 0px;
   margin: 0;
+}
 
+.work h2 {
+  font-size: 3em;
+  font-weight: 600;
+}
+
+.heading p {
+    font-size: 1.5em;
 }
 
 .heading.white {
@@ -367,6 +394,7 @@ img {
   justify-content: center;
   flex-wrap: wrap;
   flex-direction: row;
+  margin: 150px;
 }
 
 .work .cont .box {
@@ -403,12 +431,13 @@ img {
   background-color: var(--color-one);
   display: flex;
   margin-top: 10px;
+  padding: 100px;
   
 }
 
 .contact .cont h2 {
   position: relative;
-  font-size: 2em;
+  font-size: 3em;
   top: 250px;
   color: var(--color-two);
   transform: rotate(90deg) ;
@@ -420,8 +449,8 @@ img {
 
 .formBx {
   min-width: 60%;
-  width: 500px;
-  margin: 100px 100px 50px 0;  
+  width: 800px;
+  margin: 20px 10px 50px 100px;  
 }
 
 .formBx form {
@@ -431,7 +460,7 @@ img {
 
 .formBx form h3, .contactInfo {
   color: var(--color-two);
-  font-size: 1.2em;
+  font-size: 1.5em;
   font-weight: 500;
   margin-bottom: 10px;
 }
@@ -439,7 +468,7 @@ img {
 .formBx form input, .formBx form textarea {
   margin-bottom: 20px;
   padding: 15px;
-  font-size: 16px;
+  font-size: 1.3em;
   background: transparent;
   border: none;
   outline: none;
@@ -523,6 +552,11 @@ input, textarea {
   border-top: 1px solid rgb(59, 58, 58);
 }
 
+.copyright p{
+  font-size: 1.5em;  
+
+}
+
 .copyright img {
   width: 25px;
   height: 25px;
@@ -533,4 +567,5 @@ input, textarea {
   transform: scale(1.2);
 }
 
-
+    
+}

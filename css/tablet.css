@@ -39,10 +39,8 @@
   }
 
   .toggle {
-    display: none;
     position: relative;
-    left: 50px;
-    
+    left: 320px;  
   }
   
   .toggle:hover {
@@ -148,14 +146,13 @@
     display: flex;
     color: white;
     flex-direction: row;
-    display: block;
+    display: none;
     position: relative;
     text-align: center;
-   
     padding: 0;
     width: 29vw;
     height: 10vh;
-    height: 30vh;
+    height: 3vh;
     background-color: #121315;
     box-shadow: 0 0 10px #121315;
   }
