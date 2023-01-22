@@ -15,6 +15,7 @@ Grandes telas: acima de 1200px
 /* Tablet tab3 Samsung  MEDIA 600px */
 
 @media screen and (min-width: 600px) and (max-width: 700px) {
+
    /* SEÇÃO SOBRE MIM */
 
 .about {
