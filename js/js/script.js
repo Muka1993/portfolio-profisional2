@@ -52,7 +52,7 @@ function clickMenu() {
 }
 
 function telaTamanho() {
-  if(window.innerWidth >= '768'){
+  if(window.innerWidth >= '992'){
   menu.style.display = 'block';
 } else {
   menu.style.display = 'none';
