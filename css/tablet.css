@@ -39,6 +39,7 @@
   }
 
   .toggle {
+    display: block;
     position: relative;
     left: 320px;  
   }
@@ -57,20 +58,6 @@
     'opsz' 48
   }
   
-  
-  .botao {
-    width: 29px;
-    height: 22px;
-    border-radius: 9px;
-    background-color: var(--color-one);
-    border: 1px solid var(--color-two);
-  
-    transition: all .5s ease-in-out;
-  }
-  
-  .botao:hover {
-    box-shadow: 0 0 10px var(--color-two);
-  }
   
   .btn-scroll {
     position: relative;
