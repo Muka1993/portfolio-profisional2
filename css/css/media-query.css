@@ -127,6 +127,11 @@ Grandes telas: acima de 1200px
   'opsz' 48
 }
 
+.material-symbols-outlined:hover {
+  filter: drop-shadow(0 0 5px var(--color-two));
+  transform: scale(1.1);
+  transition: .5ms ease-in-out;
+}
 
 .btn-scroll {
   position: relative;
@@ -206,24 +211,24 @@ header.sticky .logo {
   position: relative;
   text-align: center;
   padding: 0;
-  width: 29vw;
-  height: 0vh;
+  width: 60vw;
   height: 3vh;
+  background-color: transparent;
+  box-shadow: 0 0 10px transparent;
  
 }
-
 
 header ul {
   position: relative;
   display: flex;
-  flex-direction: column;
-  
+  flex-direction: column; 
 }
+
 header ul li {
   position: relative;
   display: inline-block;
   list-style: none;
-  padding-top: 20px;
+  padding-top: 0px;
 }
 
 header ul li a {
@@ -232,13 +237,17 @@ header ul li a {
   font-size: 1em;
   position: relative;
   padding:  5px;
-  color: white;
+  color: var(--color-two);
   text-decoration: none; 
 
 }
 
 header.sticky ul li a  {
-  color: white;  
+  color: var(--color-one);  
+}
+
+.sticky .menu {
+  padding-top: 10px;
 }
 
 

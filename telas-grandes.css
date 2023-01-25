@@ -188,8 +188,6 @@ header.sticky .logo {
   padding: 0;
   width: 200vw;
   height: 0vh;
-  background-color: #121315;
-  box-shadow: 0 0 10px #121315;
 
 }
 
@@ -205,8 +203,7 @@ header ul li {
   position: relative;
   list-style: none;
   padding: 0px 0px;
-  
-  
+    
 }
 
 header ul li a {
@@ -225,6 +222,7 @@ header.sticky ul li a  {
 header .logo {
   position: relative;
   right: 70px;
+  font-size: 2em;
   
 }
 
@@ -285,11 +283,11 @@ header .logo {
 
 .w50 {
   min-width: 50%;
-  padding-left: 0px;
+  padding-left: 10px;
 }
 
 .w50 img {
- margin-top: 150px; 
+ margin-left: 310px;
 }
 
 img {
