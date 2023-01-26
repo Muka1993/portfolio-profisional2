@@ -348,6 +348,7 @@ img {
 .services .content .servicesBx h2 {
   font-size: 20px;
   font-weight: 600;
+  padding: 20px 0 10px 0;
 }
 
 .servicesBx button {
