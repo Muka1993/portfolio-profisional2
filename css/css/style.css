@@ -536,6 +536,10 @@ input, textarea {
   border-top: 1px solid rgb(59, 58, 58);
 }
 
+.copyright p {
+  font-size: 1em;
+}
+
 .copyright img {
   width: 25px;
   height: 25px;

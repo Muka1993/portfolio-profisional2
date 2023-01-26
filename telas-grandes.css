@@ -69,7 +69,7 @@ body {
   color: var(--color-two);
   font-weight: 500;
   line-height: 1.9em;
-  padding: 0px;
+  padding-left: 50px;
 }
 
 .banner h3 {
