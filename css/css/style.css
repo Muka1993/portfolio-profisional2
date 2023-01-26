@@ -350,6 +350,16 @@ img {
   font-weight: 600;
 }
 
+.servicesBx button {
+  padding: 6px;
+  transition: .5ms ease-in-out;
+}
+
+.servicesBx button:hover {
+  transform: scale(1.1);
+  
+}
+
 
 /* SEÇÃO FORMAÇÃO ACADÊMICA */
 
