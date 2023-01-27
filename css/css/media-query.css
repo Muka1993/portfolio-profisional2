@@ -58,7 +58,8 @@ Grandes telas: acima de 1200px
   }
   
   img {
-    max-width: 100%;
+    width: 50vw;
+    height: 40vh;
     
   }
   
@@ -324,7 +325,8 @@ header .logo {
 }
 
 img {
-  max-width: 100%;
+  width: 30vw;
+  height: 40vh;
   
 }
 
@@ -381,7 +383,8 @@ img {
 }
 
 .services .content .servicesBx img {
-  max-width: 300px;
+  width: 300px;
+  height: 200px;
   filter: infert(1);
 }
 
@@ -442,7 +445,8 @@ img {
 }
 
 .work .cont .box img {
-  max-width: 300px;
+  width: 300px;
+  height: 200px;
   filter: infert(1);
 }
 

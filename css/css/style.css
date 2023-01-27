@@ -293,7 +293,8 @@ header .logo {
 }
 
 img {
-  max-width: 100%;
+ width: 90vw;
+ height: 90vh;
   
 }
 
@@ -341,7 +342,8 @@ img {
 }
 
 .services .content .servicesBx img {
-  max-width: 300px;
+  width: 300px;
+  height: 200px;
   filter: infert(1);
 }
 
@@ -399,7 +401,8 @@ img {
 }
 
 .work .cont .box img {
-  max-width: 300px;
+  width: 300px;
+  height: 200px;
   filter: infert(1);
 }
 
