@@ -291,8 +291,9 @@ header .logo {
 }
 
 img {
-  width: 20vw;
-  height: 40vh;
+  width: 400px;
+  height: 550px;
+  padding-right: 0px;
   
 }
 

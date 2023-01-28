@@ -19,7 +19,7 @@ Grandes telas: acima de 1200px
    /* SEÇÃO SOBRE MIM */
 
 .about {
-    width: 80vw;
+    width: 62vw;
     padding-top: 100px;
     background-color: var(--color-two);
     color: var(--color-one); 
@@ -34,10 +34,11 @@ Grandes telas: acima de 1200px
   }
   
   .contentBx {
-    padding-right: 30px;
+    width: 400px;
   }
   
   .contentBx p {
+    width: 400px;
     font-size: 1em;
     padding-left: 10px;
   }
@@ -49,23 +50,25 @@ Grandes telas: acima de 1200px
   }
   
   .w50 {
-    min-width: 50%;
+    min-width: 80%;
     padding-left: 0px;
   }
   
   .w50 img {
-   margin-top: 40vw; 
+   margin-top: 60vw; 
+   margin-left: 0px;
   }
   
   img {
     width: 50vw;
     height: 40vh;
     
+    
   }
   
   .hobbie {
     margin-top: 45px;
-    width: 265px;
+    width: 305px;
   
   }
 
@@ -320,13 +323,16 @@ header .logo {
   padding-left: 0px;
 }
 
-.w50 img {
- margin-top: 150px; 
+.w50 > img {
+ margin-top: 150px;
+ width: 350px;
+ height: 450px;
+ margin-left: 50px;
 }
 
 img {
-  width: 30vw;
-  height: 40vh;
+  width: 300px;
+  height: 400;
   
 }
 
