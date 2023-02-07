@@ -208,6 +208,7 @@ header.sticky .logo {
 }
 
 .menu {
+  
   display: flex;
   color: white;
   flex-direction: row;
@@ -215,8 +216,8 @@ header.sticky .logo {
   position: relative;
   text-align: center;
   padding: 0;
-  width: 60vw;
-  height: 3vh;
+  width: 50vw;
+  height: 0vh;
   background-color: transparent;
   box-shadow: 0 0 10px transparent;
  
@@ -229,7 +230,6 @@ header ul {
 }
 
 header ul li {
-  position: relative;
   display: inline-block;
   list-style: none;
   

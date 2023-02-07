@@ -24,6 +24,28 @@ boton.addEventListener('click', () => {
   documento.classList.toggle('dark');
 });
 
+
+// FUNÇÃO QUE VERIFICA A HORA E MANDA SAUDAÇÃO
+
+var corpo = document.querySelector('body');
+
+  function carregaTempo(){
+  var text = document.querySelector('.textjs');
+  var data = new Date();
+  var hora = 16
+
+  if(hora >=0 && hora < 12){
+    text.innerHTML = 'bom dia';
+
+  }else if(hora >= 12 && hora <= 18){
+    text.innerHTML = 'boa tarde';
+
+  }else{
+    text.innerHTML = 'boa noite';
+  } 
+} 
+
+
 // ANIMAÇÃO DO BOTÃO ENVIAR
 
 let btnE = document.querySelector('.but-sub');
