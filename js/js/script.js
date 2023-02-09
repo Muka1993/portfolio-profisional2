@@ -29,22 +29,23 @@ boton.addEventListener('click', () => {
 
 var corpo = document.querySelector('body');
 
-  function carregaTempo(){
-  var text = document.querySelector('.textjs');
+corpo.addEventListener("load", carregaTempo());
+
+function carregaTempo(){ 
   var data = new Date();
-  var hora = 16
+  var hora = data.getHours;
+  var texto = document.querySelector('.texto');
 
   if(hora >=0 && hora < 12){
-    text.innerHTML = 'bom dia';
+    texto.innerHTML = 'bom dia';
 
   }else if(hora >= 12 && hora <= 18){
-    text.innerHTML = 'boa tarde';
+    texto.innerHTML = 'boa tarde';
 
   }else{
-    text.innerHTML = 'boa noite';
+    texto.innerHTML = 'boa noite';
   } 
-} 
-
+}
 
 // ANIMAÇÃO DO BOTÃO ENVIAR
 
@@ -73,12 +74,12 @@ function clickMenu() {
 }
 }
 
-function telaTamanho() {
-  if(window.innerWidth >= '992'){
-  menu.style.display = 'block';
-} else {
-  menu.style.display = 'none';
-}
+ function telaTamanho() {
+   if(window.innerWidth >= '992'){
+   menu.style.display = 'block';
+  } else {
+   menu.style.display = 'none';
+  }
 }
 
 
