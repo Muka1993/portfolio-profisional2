@@ -19,14 +19,14 @@
    
     <title>Portfólio | Samuel Candido</title>
   </head>
-  <body onload="tamanhoTela()">
+  <body onload="telaTamanho()">
 
     <!-- ÁREA DO MENU -->
 <!-- <button type="button" class="botao" id="buttone"></button> -->
     <header>
       <a href="#home" class="logo">Portfólio</a>
-      <span class="material-symbols-outlined" id="buttone">
-        dark_mode
+      <span title="Dark Mode" class="material-symbols-outlined" id="buttone">
+        brightness_6 
         </span>
       <div class="toggle" onclick="clickMenu();"><span class="material-symbols-outlined">
         menu
@@ -173,8 +173,8 @@
         <div class="formBx">
           <form>
             <h3>Mande a sua Mensagem</h3>
-            <input type="text" name="" placeholder="Nome Completo">
-            <input type="email" name="" placeholder="E-mail">
+            <input type="text" name="" placeholder="Nome Completo" required>
+            <input type="email" name="" placeholder="E-mail" required>
             <textarea placeholder="Escreva a sua Mensagem"></textarea>
             <button class="but-sub">Enviar</button>
           </form>
